@@ -54,4 +54,3 @@ Heaps is a specialized tree-based data structure that satisfies the heap propert
 either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C. Heaps can be minimun heaps and maximun heaps.
 </pre>
 </div>
-<div groupv>

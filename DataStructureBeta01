@@ -1,0 +1,57 @@
+<div groupv>
+<span title>Data Structure and Algorithms I</span>
+<pre zoom labels = "datastructure.algorithms,datastructure.heaps, datastructure.queues, datastructure.tree, analysis, analysis.computable">
+<div tagcount></div>
+<span xsmall>Introduction to DSA I</span>
+
+	DATA STRUCTURE + ALGORITHMS = PROGRAMMES
+
+Essencial knowledge:
+-A data structure is a set of information elements gifted of organization. We can classify the data structure according 
+to the organization in: lineal, hierarchical and multirelational(net).
+
+-An algorithm is a ordered sequence of steps or rules which can solve a determined problem.An algorithm must be precise, 
+finite and defined.
+
+-Abstract data types(ADT) is a type (or class) for objects whose behaviour is defined by a set of value and a set of operations.
+It is called “abstract” because it gives an implementation-independent view. (@[https://www.geeksforgeeks.org/abstract-data-types] )
+
+-How we test an Algorithm? We will test an algorithm based on: runtime, memory occupancy ,"quality" and data representation.
+
+With this essential knowledge we are ready to start in the data structure and algorithm, most of the previous concepts will appear 
+and be clarified in the course of the explanation, reflection and understanding of the structures and algorithms.
+
+</pre>
+<span title>Priority Queue</span>
+<pre zoom labels = "datastructure.algorithms, datastructure.queues">
+<div tagcount></div>
+<span xsmall>Definition of PQ</span>
+A priority queue is a neat structure which elements inserted, will appear according to a priority order, instead of the arrival's order. 
+The most common operations in PQ are: push(), pop(), peek(), isEmpty() and size().
+
+A solution for improve the insertion operation order is use a tree data structure named HEAPS*, which get an complexity of O(log(n) in 
+the insertion and elimination.A particularity of priority queue is the way of the order of its elements, using a order rule defined by the user,
+ not like the FIFO(first element is processed first) structures.
+</pre>
+
+<span title>Heaps</span>
+<pre zoom labels = "datastructure.algorithms, datastructure.heaps">
+<div tagcount></div>
+<span xsmall>Introduction to Heaps</span>
+--->The "top" node is the root node.
+--->The parent node is the which has a higher value than any son.(in maximun heaps in minimun is contrary)
+--->If a node is in "i" position:
+	The left son's position is: 2*i.
+	The right son's position is 2*i +1.
+	The father's position is 1/2.
+
+</pre>
+
+<pre zoom labels = "datastructure.algorithms, datastructure.heaps">
+<div tagcount></div>
+<span xsmall>Definition Heaps</span>
+Heaps is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key(the value) of P is 
+either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C. Heaps can be minimun heaps and maximun heaps.
+</pre>
+</div>
+<div groupv>

@@ -1,0 +1,117 @@
+<div groupv>
+    <span title>Brute-force Search</span>
+    <pre zoom labels = "datastructure.algorithm, datastructure.list, datastructure.queues">
+    <div tagcount></div>
+    <span xsmall>Breadth-First, Depth-First and Depth-First Search with Iterative Deeping</span>
+    Brute-force Search is a general problem-solving technique. It consists of systematically enumerating all possible candidates for the solution. 
+    The algorithm checks if this cadidate satisfies problem's requirement.
+    
+    --> Breadth-First (BFS): Explores the search tree from top to bottom level by level using a queue (FIFO).
+    
+    --> Depth-First (DFS): Explores the search tree branch by branch from top to bottom using a stack (LIFO).
+    
+    --> Depth-First with Iterative Deeping:  Using a finite tree in order to avoid DFS' infinite loops.
+    
+    </pre>
+    
+   
+    <span title>Best-First Search</span>
+    <pre zoom labels = "datastructure.algorithms, datastructure.tree">
+    <div tagcount></div>
+    <span xsmall>BFS with an evaluation function</span>
+        This algorithm explores the search tree by the evaluation function result f(s) = h(s).
+    
+    </pre>
+    
+    <span title>A* Search</span>
+    <pre zoom labels = "datastructure.algorithms, datastructure.list">
+    <div tagcount></div>
+    <span xsmall>Best-First Search adding a cost function.</span>
+        f(s) = h(s)+g(s)
+    
+    </pre>
+    <span title>IDA* Search</span>
+    <pre zoom labels = "datastructure.algorithms, datastructure.stack, memory, time">
+    <div tagcount></div>
+    <span xsmall>A* algorithm works with a limit in f(s) </span>
+        This is done in order to reduce Memory and Time cost.
+    
+    </pre>
+</div>
+
+    <div groupv>
+	
+    <span title>Heuristics</span>
+    <pre zoom labels = "datastructure.algorithms">
+    <div tagcount></div>
+    <span xsmall>A function that represents how far is something from the goal. </span>
+         Use a practical method or various shortcuts in order to produce solutions that may not be 
+         optimal but are sufficient given a limited timeframe or deadline.
+    
+    </pre>
+</div>
+
+    <div groupv>
+	
+    <span title>Two Players Games</span>
+    <pre zoom labels = "datastructure.algorithms">
+    <div tagcount></div>
+    <span xsmall>Deterministic and observable games like chess </span>
+        
+    
+    </pre>
+    
+    <span title>Mini-Max Algorithm</span>
+    <pre zoom labels = "datastructure.algorithms, datastructure.tree">
+    <div tagcount></div>
+    <span xsmall>It is imposible to explore a search tree in chess (10^148 leaf nodes).</span>
+    The minimax algorithm uses DFS until a preset limit exploring the search tree. 
+    The evaluation of an inner state is obtained by maximizing or minimizing, depending on the state level, 
+    the evaluation values ​​of its successor states.
+    
+    </pre>
+    <span title>Alpha-beta pruning</span>
+    <pre zoom labels = "datastructure.algorithms, datastructure.tree">
+    <div tagcount></div>
+    <span xsmall>Using a limit DFS reducing computational work</span>
+        Alpha-beta pruning uses a technique in maximization and minimization stages that reduces computational work.
+    
+    </pre>
+</div>
+
+    <div groupv>
+    <span title>Local Search and Optimization</span>
+    <pre zoom labels = "datastructure.algorithms, usecase.optimization">
+    <div tagcount></div>
+    <span xsmall>Local search is used to resolve Optimization problems</span>
+        A Optimization problem consists in selecting the better element in a set.
+    
+    </pre>
+    
+    <span title>Hill Climbing</span>
+    <pre zoom labels = "datastructure.algorithms, datastructure.graph">
+    <div tagcount></div>
+    <span xsmall>Called greedy local search as it only looks to its good immediate neighbor state and not beyond that.</span>
+    Moves in the direction of increasing value to find the peak of the mountain or best solution to the problem
+    
+    </pre>
+    
+    <span title>Simulated Annealing</span>
+    <pre zoom labels = "datastructure.algorithms">
+    <div tagcount></div>
+    <span xsmall>Probabilistic technique for approximating the global optimum</span>
+    Simulated annealing (SA) is a probabilistic technique for approximating the global optimum of a given function.
+    It is used in problems where finding an approximate global optimum is more important than finding a precise local optimum in 
+    a fixed amount of time.
+    </pre>
+    
+    </div>
+
+    <div groupv>
+    <span title>Genetic Algorithm</span>
+    <pre zoom labels = "datastructure.algorithms">
+    <div tagcount></div>
+    <span xsmall>A search heuristic that is inspired by Charles Darwin's theory of natural evolution</span>
+     Individuals are selected for reproduction in order to produce offspring of the next generation.
+     @[https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3]
+</div>

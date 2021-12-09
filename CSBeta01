@@ -1,0 +1,185 @@
+<div groupv>
+    
+    <span title>Memory Unit</span>
+    <pre zoom labels = "memory, memory.access"></prev>
+    <div tagcount></div>
+        <span xsmall>There are several kind of memories...</span>
+
+        Nowadays we use some levels of Memory with the goal of achieve the better
+        relationship between velocity and cost in our computer systems.
+        Memory architecture is used to provide CPU the information required, transfering it into register's memory. 
+
+        <ul>
+            <li>Register Memory</li>
+            <li>Cache Memory</li>
+            <li>Main Memory (Primary Memory)</li>
+            <li>Auxillary Memory (Magnetic Disks, for instance) </li>
+        </ul>
+
+    </pre>
+
+    <span title>Register's Memory</span>
+    <pre zoom labels = "memory, memory.allocation"></prev>
+    <div tagcount></div>
+    <span xsmall>Smallest and fastest memory.</span>
+
+    It is the smallest and fastest memory, divided in registers, communicates directly within the CPU. 
+    The CPU only works with register's data.
+    There are several types of registers. 
+
+
+    </pre>
+
+    <span title>Cache Memory</span>
+    <pre zoom labels = "memory, memory.access">
+    <div tagcount></div>
+    <span xsmall>There are some levels of Cache Memory</span>
+
+    There are some levels of Cache Memory, for instance, in ARM architecture:
+    <ul>
+	    <li>L1 Cache</li>
+	    <li>L2 Cache</li>
+	    <li>L3 Cache</li>
+
+    </ul>
+    It is the second fastest memory. It stores instructions and data that are
+    written to registers. Also, as Main Memory, is a Random-access memory. (RAMs)
+
+    </pre>
+
+
+    <span title>Main Memory</span>
+    <pre zoom labels = "memory, memory.allocation,random.access.memory">
+    <div tagcount></div>
+    <span xsmall>It is known as RAM...</span>
+        This memory stores all information needed (operating system, tasks, information for CPU...)
+        in inmediate use (completing a good environment of work).
+        The most commond kind of main memory is DRAM (Dynamic random access memory)
+    </pre>
+
+    <span title>Auxillary Memory</span>
+    <pre zoom labels = "memory, memory.allocation">
+    <div tagcount></div>
+    <span xsmall>Lowest-cost and highest-capacity memory</span>
+        It is where data, programmes and taks are stored for long term or 
+        when they won't be used inmediatily.
+
+    </pre>
+
+    <span title>What is Memory Architecture aim?</span>
+    <pre zoom labels = "memory, memory.allocation">
+    <div tagcount></div>
+    <span xsmall>Memory architecture has the...</span>
+        Memory architecture has the aim of making the data required by CPU in the lowest levels of memories (Registers, Cache) 
+       
+    </pre>
+
+    <span title>Strategies</span>
+    <pre zoom labels = "memory, CPU, memory.allocation">
+    <div tagcount></div>
+    <span xsmall>Anticipate data that will require CPU </span>
+        Locality Principle: memories references should be agroupated in a small portion of memory direction's space.
+        
+        Temporal Locality: it is possible to reference a memory direction in near future (in loops, variables...) 
+        Spatial Locality: near directions might be referenced in near future.
+        
+        
+       
+    </pre>
+
+    <span title>How do we transfer information between levels of Memory</span>
+    <pre zoom labels = "memory,memory.allocation, memory.shared">
+    <div tagcount></div>
+    <span xsmall>BLOCK</span>
+        There is a unit of transference called BLOCK, and is a transfer of multiple bytes(words or registers) of data.
+    </pre>
+
+    <pre zoom labels = "memory, memory.allocation, memory.shared">
+    <div tagcount></div>
+    <span xsmall>Virtual Memory</span>
+        It is used to redirect more directions than real ones.
+    
+    </pre>
+</div>
+
+<div groupv>
+<span title>Current Computers</span>
+    <pre zoom labels = "analysis, component, computer">
+    <div tagcount></div>
+    <span xsmall>Computers used to satisfy necessities</span>
+    According to their purposes, we can find:
+    -->Supercomputers
+    -->Servers
+    -->Embedded systems
+    -->Laptops and desktops
+    -->Tablets and cell-phones.
+        
+    
+    </pre>
+
+    <span title>Von Neumann architecture</span>
+    <pre zoom labels = "analysis, component, computer">
+    <div tagcount></div>
+    <span xsmall>A computer architecture proposed in 1945.
+    </span>
+    It is a computer architecture based on a 1945 description by John von Neumann and others
+    This architecture describes the components of an electronic digital computer.
+    </pre>
+
+    <pre zoom labels = "analysis, component, computer">
+    <div tagcount></div>
+    <span xsmall>Components of an electronic digital computer (by Neumann and others).
+    </span>
+    -->Processing unit
+    -->Control unit
+    -->Memory
+    -->External mass storage
+    -->Input and output mechanisms
+
+    </pre>
+
+    <span title>Software and Hardware relationship</span>
+    <pre zoom labels = "computer, component, memory">
+    <div tagcount></div>
+    <span xsmall>Software instructions in high level are transcribed to low level (machine code)  </span>
+        Programmes developed in high level (as C#, Java...) are transcribed into machine code.
+        There is a stage between high level and machine code called assembly language. 
+        Programmes in assembly should be more optimized than in high level.
+
+    </pre>
+
+    <span title>Programmes</span>
+    <pre zoom labels = "computer, program, memory">
+    <div tagcount></div>
+    <span xsmall>Definition</span>
+    Sequence of machine instructions stored in memory consecutively.
+    </pre>
+	
+    <span title>Clock rate</span>
+    <pre zoom labels = "computer, time, memory">
+    <div tagcount></div>
+    <span xsmall>Definition</span>
+    This frequency measures the speed of the cycles in the processor.
+    Its value is determined by the response time of the
+    circuits which processor is made.
+    It can be stated that if you have two exactly processors, the one that
+    have a higher clock frequency will process faster.
+    </pre>
+    
+</div>
+
+    <div groupv>
+    <span title>Moore's law</span>
+    <pre zoom labels = "computer, time, component, analysis">
+    <div tagcount></div>
+    <span xsmall>Definition</span>
+    Moore's law is the observation that the number of transistors in a dense integrated circuit (IC) doubles about every two years. 
+    @[https://en.wikipedia.org/wiki/Moore%27s_law]
+    </pre>
+    <pre zoom labels = "computer, time, component, analysis">
+    <div tagcount></div>
+    <span xsmall>Moore's law end?</span>
+    It has stopped growing the double of transistors number. Moore's law continues although power dissipated
+    per unit area on the chip grows with the square of the frequency. This could suppose the end of Moore's.
+
+    </div>

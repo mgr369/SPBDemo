@@ -53,4 +53,21 @@ the insertion and elimination.A particularity of priority queue is the way of th
 Heaps is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key(the value) of P is 
 either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C. Heaps can be minimun heaps and maximun heaps.
 </pre>
+<pre zoom labels = "datastructure.algorithms, datastructure.heaps, datastructure.operation">
+<div tagcount></div>
+<span xsmall>Sift Down/Up</span>
+-->SiftDown swaps a node that is too small with its largest child (thereby moving it down) until it is at 
+least as large as both nodes below it.
+-->SiftUp swaps a node that is too large with its parent (thereby moving it up) until it is no larger than the node above it.
+The buildHeap function takes an array of unsorted items and moves them until it they all satisfy the heap property.
+</pre>
+<pre zoom labels = "datastructure.algorithms, datastructure.heaps, datastructure.operation">
+<div tagcount></div>
+<span xsmall>sortHeap Operation</span>
+One heaps aplcation is the ordination of an array with 'n' size. Using the heaps operations of add and removeMin,
+we can design an ordination algorithm(sortHeap) following these steps:
+-->Create an empty heap with 'n' size.
+-->Insert each n's array elements int he heap.
+-->Extract each element of the heaps and stock the elements y the array.
+</pre>
 </div>

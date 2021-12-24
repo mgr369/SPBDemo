@@ -1,6 +1,6 @@
 <div groupv>
     <span title>Introduction to bash Scripting</span>
-    <pre zoom labels = "command, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>#!/bin/bash</span>
         Linux does not have extensions. If we want to create a script in Bash, it is imperative to add 
@@ -9,7 +9,7 @@
 
     </pre>
     <span title>Variables</span>
-    <pre zoom labels = "comand, operation, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>variable=5</span>
 
@@ -18,7 +18,7 @@
 
     </pre>
     <span title>Passing Arguments to the Script</span>
-    <pre zoom labels = "comand, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>./script a1 a2 a3...</span>
         When executing a script it is possible to add arguments, for instance numbers, strings...
@@ -33,7 +33,7 @@
     </pre>
 
     <span title>Console Input/Output</span>
-    <pre zoom labels = "command, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>read and echo</span>
         Input: using read allows to introduce information by keyboard, saving it into a variable.
@@ -47,7 +47,7 @@
     </pre>
 
     <span title>I/O Redirection</span>
-    <pre zoom labels = "command, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>We can change default console I/O</span>
 
@@ -66,7 +66,7 @@
     </pre>
 
     <span title>Show the information of a file</span>
-    <pre zoom labels = "command, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>less, cat and more</span>
         If you want to display the content of the /etc/passwd file you can run:
@@ -76,7 +76,7 @@
     </pre>
 
     <span title>Filter the command output</span>
-    <pre zoom labels = "command, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>grep, head, tail, cut and sort</span>
             
@@ -106,7 +106,7 @@
 
     </pre>
     <span title>Logical and Arithmetic operations</span>
-    <pre zoom labels = "command, operation">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>Working with variables</span>
         To do operations, use the expr command and to perform comparisons,
@@ -115,7 +115,7 @@
     </pre>
 
     <span title>expr command</span>
-    <pre zoom labels = "command, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>It is used to  do arithmetic operations and to manipulate strings</span>
         To do operations, use the expr command and to perform comparisons,
@@ -137,7 +137,7 @@
     </pre>
 
     <span title>Operators</span>
-    <pre zoom labels = "command, operation">
+    <pre zoom labels = "bash, dev_lang.bash, operation">
     <div tagcount></div>
         <span xsmall>A brief list of operators</span>
         
@@ -165,7 +165,7 @@
     </pre>
 
     <span title>test command</span>
-    <pre zoom labels = "command, linux">
+    <pre zoom labels = "bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>Evaluates three types of elements: files, strings, and numbers</span>
         This command can be executed in two different ways.
@@ -206,7 +206,7 @@
     </pre>
     
     <span title>Simple condition (if)</span>
-    <pre zoom labels = "loop, linux">
+    <pre zoom labels = "loop, bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>Tells what to do when the condition is true.</span>
         if contition

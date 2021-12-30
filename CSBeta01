@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+   <meta charset="UTF-8">
+   <meta name="keywords" content="">
+   <meta name="viewport"
+     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title></title>
+<head>
+<script type=module src=./IT_notes/map_v1.js></script>
+
+<link rel='stylesheet' type='text/css' href='./IT_notes/map_v1.css' />
+</head>
+<body>
 <div groupv>
     
     <span title>Memory Unit</span>
@@ -63,7 +76,7 @@
     <span xsmall>Lowest-cost and highest-capacity memory</span>
         It is where data, programmes and taks are stored for long term or 
         when they won't be used inmediatily.
-
+	</hr>
     </pre>
 
     <span title>What is Memory Architecture aim?</span>
@@ -181,5 +194,238 @@
     <span xsmall>Moore's law end?</span>
     It has stopped growing the double of transistors number. Moore's law continues although power dissipated
     per unit area on the chip grows with the square of the frequency. This could suppose the end of Moore's.
-
     </div>
+    
+    <div groupv>
+    <span title>Processor Architecture and Instruction Set (ISA)</span>
+    <pre zoom labels = "cpu.arcuitecture, ISA">
+    <div tagcount></div>
+    <span xsmall>Risc or Cisc desing?</span>
+    One of the most important decisions when we are designing a processor is to decide
+    what will be its instruction set (Instructions Set Architecture, ISA).
+
+    RISC: Reduced Instruction Set Computer.
+    CISC: Complex Instruction Set Computer.
+    
+    -Each ISA defines the design of the processor.
+    -Processors with different architectures have different ISA.
+    -Most current processors are based on RISC architectures.
+        
+    </pre>
+    
+    <span title>Risc Architecture</span>
+    <pre zoom labels = "cpu.architecture, cpu.risc, ISA">
+    <div tagcount></div>
+    <span xsmall>RISC machines use very simple instructions.</span>
+
+    RISC machines use very simple instructions. Each operation must be
+    expressed as a sequence of these few instructions. 
+    
+    1. The language is based on a little repertoire of instructions.
+    2. The instructions are very simple. The circuitry is simpler than CISC processors.
+    3. For any operation several elementary instructions are required.
+
+    </pre>
+    
+    
+    <span title>Cisc Architecture</span>
+    <pre zoom labels = "capu.architecture, cpu.cisc, ISA">
+    <div tagcount></div>
+    <span xsmall>CISC machines use very complex instructions.</span>
+    CISC machines use very complex instructions which are very
+    descriptive and specific.
+
+    1. The language should contain a wide assortment of instructions (one for
+    each different circumstance).
+    2. They are complex instructions. Then, they take longer to execute.
+    3. Few instructions are required for a specific situation.
+
+    </pre>
+    
+    <span title>Evolution of processors</span>
+    <pre zoom labels = "cpu.archecture, ISA, cpu.risc, cpu.cisc">
+    <div tagcount></div>
+    <span xsmall>Nowadays, they are based on RISC.</span>
+    Current processors are based on a RISC core to which they are added
+    resources to execute more complex instructions.
+
+    RISC-type current processor example: ARM
+    </pre>
+    
+    
+    <span title>Architecture-Based Performance Improvement Techniques</span>
+    <pre zoom labels = "cpu.architecture, cpu.performance">
+    <div tagcount></div>
+    <span xsmall>Segmentation, superscaling and multicore</span>
+    The segmentation and superscalability of processors try
+    to improve performance through parallelism in the execution of the
+    instructions. These architectures are capable of execute
+    simultaneously a set of machine instructions.
+
+    Current processors exploit other levels of parallelism with
+    multicore architectures 
+    </pre>
+</div>
+
+<div groupv>
+    <span title>Machine language</span>
+     <pre zoom labels = "cpu.lenguage">
+    <div tagcount></div>
+    <span xsmall>Composed by digital binary numbers.</span>
+    CPU works with words, a natural unit of data composed by bits
+    (1 and 0)
+    </pre>
+    
+    <span title>ARMV4 Instruction Set</span>
+    <pre zoom labels = "ISA">
+    <div tagcount></div>
+    <span xsmall>Modern ISA ARM core</span>
+    32-bit address bus
+    32-bit memory words
+    32-bit instructions
+    Bank of 16 registers
+    </pre>
+    
+    <span title>High-Level Code</span>
+    <pre zoom labels = "cpu.lenguage, high.level.lenguage">
+    <div tagcount></div>
+    <span xsmall>A high-level programming language</span>
+    High-level code is designed to be read by human programmers.
+    -Variables and structures are defined.
+    -Each instruction can be expressed.
+    with various instructions in assembler.
+    -Varied syntax.
+    </pre>
+    
+    <span title>ARM Assembly Code</span>
+    <pre zoom labels = "cpu.lenguage, ISA">
+    <div tagcount></div>
+    <span xsmall>A low-level programming language</span>
+    It is a type of low-level programming language that is 
+    intended to communicate directly with a computer's hardware.
+
+    -There are no variables
+    -Operands: Registers, immediate, memory words.
+    -Very limited operations.
+    -There are directives in assembler.
+    </pre>
+    
+
+    <span title>ARM registers</span>
+    <pre zoom labels = "cpu.lenguage, ISA">
+    <div tagcount></div>
+    <span xsmall>There are 16 registers in ARM.</span>
+
+    Name          |           Use
+    R0 -> Argument / Return value / Temporary variables.
+    R1-R3 -> Argument / Temporary variables.
+    R4-R11 -> Saved variables.
+    R12 -> Temporary variable.
+    R13 (SP) -> Stack Pointer.
+    R14 (LR) -> Link Register.
+    R15 (PC) -> Program Counter.
+    </pre>
+    
+    <pre zoom labels = "cpu.lenguage, ISA">
+    <div tagcount></div>
+    <span title>ARMV4 instructions set</span>
+    <!--Completar con imágenes.
+    <pre zoom>
+    <span xsmall>...</span>
+    
+
+    </pre>
+    -->
+</div>
+
+<div groupv>
+ 
+    <span title>Execution time</span>
+        <pre zoom labels = "cpu.time, cpu.performance">
+    	<div tagcount></div>
+        <span xsmall>It is necessary to differentiate some types of time.</span>    
+        The time that takes a program to be executed by a computer can be
+        difficult to measure, due to Multitasking Operating Systems and
+        I/O.    
+
+        *Time elapsed:
+           • It counts everything (disk and memory accesses, I/O, etc.)
+           • It is what the user perceives, but it is not used for comparisons.
+
+        *CPU time:
+            • It does not count I/O and the time consumed by other programs.
+            • It is divided into system time and user time.
+        
+        *CPU time used by OS:
+            • The time that takes the OS in carrying out its internal management.
+
+        *User CPU time:
+            • Time spent executing the lines of code that are in our program.
+        </pre>
+
+        
+        <span title>What is performance?</span>
+        <pre zoom labels = "capu.performance">
+        <div tagcount></div>
+        <span xsmall>Comparing performance of various processors</span>
+        From an architectural point of view, when comparing performance
+        of various processors this is measured as:
+
+        Performance = 1 / X
+        where X is user CPU time.
+
+        Program execution time = CPU time + I/O wait.
+    
+        </pre>
+
+        
+        <span title>Iron law</span>
+       <pre zoom labels = "cpu.perfomance">
+        <div tagcount></div>
+        <span xsmall>Expression of the performance of a processor</span>
+
+        CPU time = (Instructions/program) * CPI * (Time/Cycle)
+        
+        CPI = Cycles/instruction
+        Time/Cycle = 1/f  where f is CPU frequence.
+
+
+    
+        </pre>
+        
+        <span title>Measures</span>
+        <pre zoom labels = "cpu.measures, cpu.mips">
+        <div tagcount></div>
+        <span xsmall>Millions of instructions per second(MIPS)</span>
+          It is a measure of a computer's central processing unit 
+          performance.
+
+            MIPS = Instructions / (CPU time * 10^6)
+
+        </pre>
+   
+        
+        <pre zoom labels = "cpu.measures, cpu.flops">
+         <div tagcount></div>
+        <span xsmall>Floating point operations per second(FLOPS)</span>
+        It is used in calculations that require heavy use of floating point 
+        operations.
+
+            FLOPS = Floating Poins Instructions / (CPU time * 10^6)
+
+        </pre>
+        
+        <span title>Energy efficiency</span>
+        <pre zoom labels = "cpu.architecture, cpu.efficiency">
+        <div tagcount></div>
+        <span xsmall>The main objetive is to reduce energy consumption</span>
+        Reducing energy consumption has become an objective in the
+        design of modern processors.
+
+        Energy efficiency = GFLOPs / watts = 1/Joule
+        </pre>
+</div>
+    
+</div>
+</body>
+</html>

@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+   <meta charset="UTF-8">
+   <meta name="keywords" content="">
+   <meta name="viewport"
+     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title></title>
+<head>
+<script type=module src=./IT_notes/map_v1.js></script>
+
+<link rel='stylesheet' type='text/css' href='./IT_notes/map_v1.css' />
+</head>
+<body>
 <div groupv>
     <span title>Introduction to bash Scripting</span>
     <pre zoom labels = "bash, dev_lang.bash">
@@ -204,8 +217,11 @@
 
 
     </pre>
-    
-    <span title>Simple condition (if)</span>
+</div>
+
+<div groupv>
+
+    	<span title>Simple condition (if)</span>
     <pre zoom labels = "loop, bash, dev_lang.bash">
     <div tagcount></div>
         <span xsmall>Tells what to do when the condition is true.</span>
@@ -224,3 +240,78 @@
         fi
 
     </pre>
+    
+        <span title>Case</span>
+        <pre zoom labels = "dev_lang.bash">
+    	<div tagcount></div>
+            <span xsmall>It simplifies conditionals when you have multiple different choices.</span>
+            Structure:
+            case $variable in
+                valor1) cmd...
+                ;;
+                comando;;
+                valor2) comd...
+                ;;
+                *) cmd  ;;
+            esac
+        </pre>
+
+        <span title>For Loop</span>
+        <pre zoom labels = "bash.loop, dev_lang.bash">
+        <div tagcount></div>
+            <span xsmall>This loop is used to execute a code a certain number of times</span>
+            for (( expression1; expr2; expr3 )) do
+                ...
+            done
+
+            Example:
+            #!/bin/bash
+            for ((i = 0; i <= 5; i++))
+            do
+                echo " $i "
+            done
+           
+        </pre>
+
+        <span title>While Loop</span>
+         <pre zoom labels = "bash.loop, dev_lang.bash">
+         <div tagcount></div>
+            <span xsmall>The while loop allows you to execute a code until a condition is not met</span>
+            while [ condition ]
+            do
+                cmd1
+                cmd2
+                ...
+            done
+           
+            Example:
+            #/bin/bash
+            limite=5
+            i=0;
+            while (test $limite -gt $i)
+            do
+                echo "Valor $i"
+                let i=$i+1
+            done
+
+        </pre>
+
+        
+        <span title>Function</span>
+        <pre zoom labels = "dev_lang.bash">
+        <div tagcount></div>
+            <span xsmall>A function is a block of code that allows its reuse in an easy and
+                simple way</span>
+
+                Example:
+                #!/bin/bash
+
+                function show_message() {
+                        echo "Hello world!"
+                }
+
+                mostrar_mensaje;
+        </pre>
+    </div>
+</body>
+</html>

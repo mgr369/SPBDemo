@@ -36,7 +36,7 @@
 </div>
 
     <div groupv>
-	
+
     <span title>Heuristics</span>
     <pre zoom labels = "datastructure.algorithms">
     <span xsmall>A function that represents how far is something from the goal. </span>
@@ -47,7 +47,7 @@
 </div>
 
     <div groupv>
-	
+
     <span title>Two Players Games</span>
     <pre zoom labels = "datastructure.algorithms">
     <span xsmall>Deterministic and observable games like chess </span>

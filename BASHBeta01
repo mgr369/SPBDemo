@@ -14,7 +14,6 @@
 <div groupv>
     <span title>Introduction to bash Scripting</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>#!/bin/bash</span>
         Linux does not have extensions. If we want to create a script in Bash, it is imperative to add 
         in the first line of a file "#!/bin/bash".
@@ -23,7 +22,6 @@
     </pre>
     <span title>Variables</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>variable=5</span>
 
        It is important, when you are using variables, not to put spaces between "=". 
@@ -32,7 +30,6 @@
     </pre>
     <span title>Passing Arguments to the Script</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>./script a1 a2 a3...</span>
         When executing a script it is possible to add arguments, for instance numbers, strings...
         They are saved in variables:
@@ -47,7 +44,6 @@
 
     <span title>Console Input/Output</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>read and echo</span>
         Input: using read allows to introduce information by keyboard, saving it into a variable.
             read variable. 
@@ -61,7 +57,6 @@
 
     <span title>I/O Redirection</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>We can change default console I/O</span>
 
             By default the standard output is connected to the screen, the standard input to the
@@ -80,7 +75,6 @@
 
     <span title>Show the information of a file</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>less, cat and more</span>
         If you want to display the content of the /etc/passwd file you can run:
 
@@ -90,7 +84,6 @@
 
     <span title>Filter the command output</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>grep, head, tail, cut and sort</span>
             
         grep: shows the lines that meet a certain condition.
@@ -120,7 +113,6 @@
     </pre>
     <span title>Logical and Arithmetic operations</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>Working with variables</span>
         To do operations, use the expr command and to perform comparisons,
         use the test command.   
@@ -129,7 +121,6 @@
 
     <span title>expr command</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>It is used to  do arithmetic operations and to manipulate strings</span>
         To do operations, use the expr command and to perform comparisons,
         use the test command.   
@@ -151,7 +142,6 @@
 
     <span title>Operators</span>
     <pre zoom labels = "bash, dev_lang.bash, operation">
-    <div tagcount></div>
         <span xsmall>A brief list of operators</span>
         
         Arithmetic operators:
@@ -179,7 +169,6 @@
 
     <span title>test command</span>
     <pre zoom labels = "bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>Evaluates three types of elements: files, strings, and numbers</span>
         This command can be executed in two different ways.
            1. test -option file
@@ -223,7 +212,6 @@
 
     	<span title>Simple condition (if)</span>
     <pre zoom labels = "loop, bash, dev_lang.bash">
-    <div tagcount></div>
         <span xsmall>Tells what to do when the condition is true.</span>
         if contition
         then
@@ -243,7 +231,6 @@
     
         <span title>Case</span>
         <pre zoom labels = "dev_lang.bash">
-    	<div tagcount></div>
             <span xsmall>It simplifies conditionals when you have multiple different choices.</span>
             Structure:
             case $variable in
@@ -258,7 +245,6 @@
 
         <span title>For Loop</span>
         <pre zoom labels = "bash.loop, dev_lang.bash">
-        <div tagcount></div>
             <span xsmall>This loop is used to execute a code a certain number of times</span>
             for (( expression1; expr2; expr3 )) do
                 ...
@@ -275,7 +261,6 @@
 
         <span title>While Loop</span>
          <pre zoom labels = "bash.loop, dev_lang.bash">
-         <div tagcount></div>
             <span xsmall>The while loop allows you to execute a code until a condition is not met</span>
             while [ condition ]
             do
@@ -299,7 +284,6 @@
         
         <span title>Function</span>
         <pre zoom labels = "dev_lang.bash">
-        <div tagcount></div>
             <span xsmall>A function is a block of code that allows its reuse in an easy and
                 simple way</span>
 

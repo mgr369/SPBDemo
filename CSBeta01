@@ -15,7 +15,6 @@
     
     <span title>Memory Unit</span>
     <pre zoom labels = "memory, memory.access"></prev>
-    <div tagcount></div>
         <span xsmall>There are several kind of memories...</span>
 
         Nowadays we use some levels of Memory with the goal of achieve the better
@@ -33,7 +32,6 @@
 
     <span title>Register's Memory</span>
     <pre zoom labels = "memory, memory.allocation"></prev>
-    <div tagcount></div>
     <span xsmall>Smallest and fastest memory.</span>
 
     It is the smallest and fastest memory, divided in registers, communicates directly within the CPU. 
@@ -45,7 +43,6 @@
 
     <span title>Cache Memory</span>
     <pre zoom labels = "memory, memory.access">
-    <div tagcount></div>
     <span xsmall>There are some levels of Cache Memory</span>
 
     There are some levels of Cache Memory, for instance, in ARM architecture:
@@ -63,7 +60,6 @@
 
     <span title>Main Memory</span>
     <pre zoom labels = "memory, memory.allocation,random.access.memory">
-    <div tagcount></div>
     <span xsmall>It is known as RAM...</span>
         This memory stores all information needed (operating system, tasks, information for CPU...)
         in inmediate use (completing a good environment of work).
@@ -72,7 +68,6 @@
 
     <span title>Auxillary Memory</span>
     <pre zoom labels = "memory, memory.allocation">
-    <div tagcount></div>
     <span xsmall>Lowest-cost and highest-capacity memory</span>
         It is where data, programmes and taks are stored for long term or 
         when they won't be used inmediatily.
@@ -81,7 +76,6 @@
 
     <span title>What is Memory Architecture aim?</span>
     <pre zoom labels = "memory, memory.allocation">
-    <div tagcount></div>
     <span xsmall>Memory architecture has the...</span>
         Memory architecture has the aim of making the data required by CPU in the lowest levels of memories (Registers, Cache) 
        
@@ -89,7 +83,6 @@
 
     <span title>Strategies</span>
     <pre zoom labels = "memory, CPU, memory.allocation">
-    <div tagcount></div>
     <span xsmall>Anticipate data that will require CPU </span>
         Locality Principle: memories references should be agroupated in a small portion of memory direction's space.
         
@@ -102,13 +95,11 @@
 
     <span title>How do we transfer information between levels of Memory</span>
     <pre zoom labels = "memory,memory.allocation, memory.shared">
-    <div tagcount></div>
     <span xsmall>BLOCK</span>
         There is a unit of transference called BLOCK, and is a transfer of multiple bytes(words or registers) of data.
     </pre>
 
     <pre zoom labels = "memory, memory.allocation, memory.shared">
-    <div tagcount></div>
     <span xsmall>Virtual Memory</span>
         It is used to redirect more directions than real ones.
     
@@ -118,7 +109,6 @@
 <div groupv>
 <span title>Current Computers</span>
     <pre zoom labels = "analysis, component, computer">
-    <div tagcount></div>
     <span xsmall>Computers used to satisfy necessities</span>
     According to their purposes, we can find:
     -->Supercomputers
@@ -132,7 +122,6 @@
 
     <span title>Von Neumann architecture</span>
     <pre zoom labels = "analysis, component, computer">
-    <div tagcount></div>
     <span xsmall>A computer architecture proposed in 1945.
     </span>
     It is a computer architecture based on a 1945 description by John von Neumann and others
@@ -140,7 +129,6 @@
     </pre>
 
     <pre zoom labels = "analysis, component, computer">
-    <div tagcount></div>
     <span xsmall>Components of an electronic digital computer (by Neumann and others).
     </span>
     -->Processing unit
@@ -153,7 +141,6 @@
 
     <span title>Software and Hardware relationship</span>
     <pre zoom labels = "computer, component, memory">
-    <div tagcount></div>
     <span xsmall>Software instructions in high level are transcribed to low level (machine code)  </span>
         Programmes developed in high level (as C#, Java...) are transcribed into machine code.
         There is a stage between high level and machine code called assembly language. 
@@ -163,14 +150,12 @@
 
     <span title>Programmes</span>
     <pre zoom labels = "computer, program, memory">
-    <div tagcount></div>
     <span xsmall>Definition</span>
     Sequence of machine instructions stored in memory consecutively.
     </pre>
 	
     <span title>Clock rate</span>
     <pre zoom labels = "computer, time, memory">
-    <div tagcount></div>
     <span xsmall>Definition</span>
     This frequency measures the speed of the cycles in the processor.
     Its value is determined by the response time of the
@@ -184,13 +169,11 @@
     <div groupv>
     <span title>Moore's law</span>
     <pre zoom labels = "computer, time, component, analysis">
-    <div tagcount></div>
     <span xsmall>Definition</span>
     Moore's law is the observation that the number of transistors in a dense integrated circuit (IC) doubles about every two years. 
     @[https://en.wikipedia.org/wiki/Moore%27s_law]
     </pre>
     <pre zoom labels = "computer, time, component, analysis">
-    <div tagcount></div>
     <span xsmall>Moore's law end?</span>
     It has stopped growing the double of transistors number. Moore's law continues although power dissipated
     per unit area on the chip grows with the square of the frequency. This could suppose the end of Moore's.
@@ -199,7 +182,6 @@
     <div groupv>
     <span title>Processor Architecture and Instruction Set (ISA)</span>
     <pre zoom labels = "cpu.arcuitecture, ISA">
-    <div tagcount></div>
     <span xsmall>Risc or Cisc desing?</span>
     One of the most important decisions when we are designing a processor is to decide
     what will be its instruction set (Instructions Set Architecture, ISA).
@@ -215,7 +197,6 @@
     
     <span title>Risc Architecture</span>
     <pre zoom labels = "cpu.architecture, cpu.risc, ISA">
-    <div tagcount></div>
     <span xsmall>RISC machines use very simple instructions.</span>
 
     RISC machines use very simple instructions. Each operation must be
@@ -230,7 +211,6 @@
     
     <span title>Cisc Architecture</span>
     <pre zoom labels = "capu.architecture, cpu.cisc, ISA">
-    <div tagcount></div>
     <span xsmall>CISC machines use very complex instructions.</span>
     CISC machines use very complex instructions which are very
     descriptive and specific.
@@ -244,7 +224,6 @@
     
     <span title>Evolution of processors</span>
     <pre zoom labels = "cpu.archecture, ISA, cpu.risc, cpu.cisc">
-    <div tagcount></div>
     <span xsmall>Nowadays, they are based on RISC.</span>
     Current processors are based on a RISC core to which they are added
     resources to execute more complex instructions.
@@ -255,7 +234,6 @@
     
     <span title>Architecture-Based Performance Improvement Techniques</span>
     <pre zoom labels = "cpu.architecture, cpu.performance">
-    <div tagcount></div>
     <span xsmall>Segmentation, superscaling and multicore</span>
     The segmentation and superscalability of processors try
     to improve performance through parallelism in the execution of the
@@ -270,7 +248,6 @@
 <div groupv>
     <span title>Machine language</span>
      <pre zoom labels = "cpu.lenguage">
-    <div tagcount></div>
     <span xsmall>Composed by digital binary numbers.</span>
     CPU works with words, a natural unit of data composed by bits
     (1 and 0)
@@ -278,7 +255,6 @@
     
     <span title>ARMV4 Instruction Set</span>
     <pre zoom labels = "ISA">
-    <div tagcount></div>
     <span xsmall>Modern ISA ARM core</span>
     32-bit address bus
     32-bit memory words
@@ -288,7 +264,6 @@
     
     <span title>High-Level Code</span>
     <pre zoom labels = "cpu.lenguage, high.level.lenguage">
-    <div tagcount></div>
     <span xsmall>A high-level programming language</span>
     High-level code is designed to be read by human programmers.
     -Variables and structures are defined.
@@ -299,7 +274,6 @@
     
     <span title>ARM Assembly Code</span>
     <pre zoom labels = "cpu.lenguage, ISA">
-    <div tagcount></div>
     <span xsmall>A low-level programming language</span>
     It is a type of low-level programming language that is 
     intended to communicate directly with a computer's hardware.
@@ -313,7 +287,6 @@
 
     <span title>ARM registers</span>
     <pre zoom labels = "cpu.lenguage, ISA">
-    <div tagcount></div>
     <span xsmall>There are 16 registers in ARM.</span>
 
     Name          |           Use
@@ -327,7 +300,6 @@
     </pre>
     
     <pre zoom labels = "cpu.lenguage, ISA">
-    <div tagcount></div>
     <span title>ARMV4 instructions set</span>
     <!--Completar con imágenes.
     <pre zoom>
@@ -342,7 +314,6 @@
  
     <span title>Execution time</span>
         <pre zoom labels = "cpu.time, cpu.performance">
-    	<div tagcount></div>
         <span xsmall>It is necessary to differentiate some types of time.</span>    
         The time that takes a program to be executed by a computer can be
         difficult to measure, due to Multitasking Operating Systems and
@@ -366,7 +337,6 @@
         
         <span title>What is performance?</span>
         <pre zoom labels = "capu.performance">
-        <div tagcount></div>
         <span xsmall>Comparing performance of various processors</span>
         From an architectural point of view, when comparing performance
         of various processors this is measured as:
@@ -381,7 +351,6 @@
         
         <span title>Iron law</span>
        <pre zoom labels = "cpu.perfomance">
-        <div tagcount></div>
         <span xsmall>Expression of the performance of a processor</span>
 
         CPU time = (Instructions/program) * CPI * (Time/Cycle)
@@ -395,7 +364,6 @@
         
         <span title>Measures</span>
         <pre zoom labels = "cpu.measures, cpu.mips">
-        <div tagcount></div>
         <span xsmall>Millions of instructions per second(MIPS)</span>
           It is a measure of a computer's central processing unit 
           performance.
@@ -406,7 +374,6 @@
    
         
         <pre zoom labels = "cpu.measures, cpu.flops">
-         <div tagcount></div>
         <span xsmall>Floating point operations per second(FLOPS)</span>
         It is used in calculations that require heavy use of floating point 
         operations.
@@ -417,7 +384,6 @@
         
         <span title>Energy efficiency</span>
         <pre zoom labels = "cpu.architecture, cpu.efficiency">
-        <div tagcount></div>
         <span xsmall>The main objetive is to reduce energy consumption</span>
         Reducing energy consumption has become an objective in the
         design of modern processors.

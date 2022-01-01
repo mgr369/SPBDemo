@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+   <meta charset="UTF-8">
+   <meta name="keywords" content="">
+   <meta name="viewport"
+     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title></title>
+<head>
+<script type=module src=./IT_notes/map_v1.js></script>
+
+<link rel='stylesheet' type='text/css' href='./IT_notes/map_v1.css' />
+</head>
+<body>
+<div groupv>
+
+<span title>Data Structure and Algorithms I</span>
+<pre zoom labels = "datastructure.heaps, datastructure.queues, datastructure.tree, analysis, analysis.computable, _PM.ext_resource.tools">
+<span xsmall>Didactics tools</span>
+• Some of tools that can help to you to understand how the algorithms work:
+@[https://visualgo.net/en/heap]
+@[http://vedatyildiz.net/kou/veri2/heap.html]
+@[https://visualgo.net/en/bst?slide=1]
+</pre>
+
+<pre zoom labels = "datastructure.heaps, datastructure.queues, datastructure.tree, analysis, analysis.computable">
+<span xsmall>Introduction to DSA I</span>
+
+• DATA STRUCTURE + ALGORITHMS = PROGRAMMES
+
+• ESSENCIAL KNOWLEDGE:
+  • A data structure is a set of information elements gifted of 
+    organization. We can classify the data structure according to the 
+    organization in:
+    - LINEAL. 
+    - HIERARCHICAL.
+    - MULTIRELATIONAL(NET).
+  
+  • An algorithm is a ordered sequence of steps or rules which can 
+    solve a determined problem. An algorithm must be precise, finite and 
+    defined.
+  
+  • Abstract data types (ADT) is a type (or class) for objects whose 
+    behaviour is defined by a set of values and a set of operations.
+    It is called “abstract” because it gives an implementation-independent view.
+    (@[https://www.geeksforgeeks.org/abstract-data-types])
+  
+  • How we test an Algorithm?
+    We will test an algorithm based on: runtime, memory occupancy,
+    "quality" and data representation.
+
+  With this essential knowledge we are ready to start in the data 
+  structure and algorithm, most of the previous concepts will appear 
+  and be clarified in the course of the explanation, reflection and 
+  understanding of the structures and algorithms.
+</pre>
+
+<pre zoom labels = "datastructure.queues">
+<span title>Priority Queue</span>
+• A priority queue is a neat structure which elements inserted, will 
+  appear according to a priority order, instead of the arrival's order. 
+• most common operations are:
+  push(), pop(), peek(), isEmpty() and size().
+• A solution for improve the insertion operation order is use a tree 
+  data structure named HEAPS*, which get an complexity of O(log(n)) in 
+  the insertion and elimination.
+• A particularity of priority queues is the way of the order of its 
+  elements, using a order rule defined by the user, not like the 
+  FIFO (first element is processed first) structures.
+</pre>
+
+<pre zoom labels = "datastructure.heaps">
+<span title>HEAPS</span>
+• The "top" node is the root node.
+• The parent node is one which has a higher value than any son.
+  (in maximum-heaps,  in minimum-heaps it is the opposite)
+• If a node is in "i" position then:
+  · left son's  position is  2*i.
+  · right son's position is  2*i + 1.
+  · father's    position is  1/2
+
+• Heaps is a specialized tree-based data structure that satisfies the 
+  heap property: if P is a parent node of C, then the key(the value) of 
+  P is either greater than or equal to (in a max heap) or less than or 
+  equal to (in a min heap) the key of C. Heaps can be minimun heaps and 
+  maximun heaps.
+
+• Core HEAPs Operations:
+  • BUILD-HEAP ("constructor") function:
+    takes an array of unsorted items (not yet in HEAP) and moves them 
+    until it they all satisfy the heap property.
+ 
+  • SHIFT-DOWN/UP Operation: 
+    · 'ShiftDown' swaps a node that is too small with its largest child (thereby 
+      moving it down) until it is at least as large as both nodes below it.
+    · 'SiftUp' swaps a node that is too large with its parent (thereby 
+      moving it up) until it is no larger than the node above it.
+  
+  • SORT-HEAP Operation:
+    One heaps aplication is the ordering of an array with 'n' size.
+    Using the heaps operations of add and removeMin,
+    we can design an ordering algorithm(sortHeap) following these steps:
+    1) Create an empty heap with 'n' size.
+    2) Insert each n's array elements in the heap.
+    3) Extract each element of the heaps and stock the elements in tthe array.
+</pre>
+
+<pre zoom labels = "datastructure.tree">
+<span title>Tree</span>
+• trees are structures that organize their elements, denominated 
+  nodes, forming a hierarchy. 
+• The node which is in the top of the tree is called root node. The 
+  remaining nodes are distributed in sets of disjoint subsets, in which 
+  each one is a tree ==> subtree of the main tree.The nodes who have 
+  not sons are called leaf node.
+@[https://en.wikipedia.org/wiki/Tree_(data_structure)]
+
+• Trees Order:
+  Depending on the order of a tree, it can be totally different, 
+  there are the following types of order:
+  • IN-ORDER: The left subtree is visited first, then the root and 
+    later the right sub-tree. We should always remember that 
+    every node may represent a subtree itself.If a binary tree is 
+    traversed in-order, the output will produce sorted key values
+    in an ascending order.
+  • PRE-ORDER: In this traversal method, the root node is visited 
+    first, then the left subtree and finally the right subtree.
+  • POST-ORDER: In this traversal method, the root node is visited 
+    last, hence the name. First we traverse the left subtree, then the 
+    right subtree and finally the root node.
+
+                                    ROOT
+                                 +-------+
+                                 |   A   |
+                                 +---+---+
+           LEFT SUBTREE              |               RIGHT SUBTREE
+    x x x x x x x x x x x x x x x    |      x x x x x x x x x x x x x x 
+   x                              x  |    x                             x
+   x           +-------+----------x--+----x---------+-------+           x
+   x           |   B   |          x       x         |   C   |           x
+   x           +---+---+          x       x         +---+---+           x
+   x               |              x       x             |               x
+   x               |              x       x             |               x
+   x               |              x       x             |               x
+   x               |              x       x             |               x
+   x +------+------+-----+------+ x       x +------+----+-----+------+  x
+   x |  D   |            |   E  | x       x |  F   |          |  G   |  x
+   x +------+            +------+ x       x +------+          +------+  x
+   x                              x       x                             x
+    x x x x x x x x x x x x x x x           x x x x x x x x x x x x x x 
+
+
+• Inorder, Preorder and Postorder:
+  Assuming that we have the following tree:
+                         +-----+                       ºLEVELº
+                         |  8  |························· 0
+                         +--+--+
+                            |
+                            |
+             +-----+--------+---------+-----+
+             |  3  |                  |  10 |············ 1
+             +--+--+                  +--+--+
+                |                        |
+                |                        |
+  +-----+       |     +------+           +-----+------+
+  |  1  +-------+-----+  6   |                 |  14  |·· 2
+  +-----+             +--+---+                 +---+--+
+                         |                         |
+                         |                         |
+              +-----+----+---+-----+    +-----+----+
+              |  4  |        |  7  |    |  13 |·········· 3
+              +-----+        +-----+    +-----+
+
+  the order according to the different types would be:
+  ·   IN-ORDER: 4 6 7 1 3 [8] 13 14 10
+  ·  PRE-ORDER: [8] 4 6 7 1 3 13 14 10
+  · POST-ORDER: 4 6 7 1 3 13 14 10 [8]
+</pre>
+
+</div>
+</body>
+</html>

@@ -624,7 +624,7 @@ const MB = { // Menu Bar
         searchDiv.setAttribute("id", "upper_bar")
         searchDiv.classList.add("noprint")
         searchDiv.innerHTML = ''
-     + '<img id="idLabelsFilter" class="noprint" src="/IT_notes/labelIcon.svg"/>'
+     + '<img id="idLabelsFilter" class="noprint" src="./IT_notes/labelIcon.svg"/>'
      + '<a href="../help.html" class="noprint" style="cursor:help" target="_blank" >❓</a>'
      + '<span blue id="printButton">Print</span>'
      + '<span id="loupe"  blue>🔍︎</span>'

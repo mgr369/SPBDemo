@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <meta charset="UTF-8">
+   <meta name="keywords" content="">
+   <meta name="viewport"
+     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>DataBase</title>
+<head>
+<script type=module src=./IT_notes/map_v1.js></script>
+
+<link rel='stylesheet' type='text/css' href='./IT_notes/map_v1.css' />
+</head>
+<body>
+<div groupv>
+<span title>Data Base</span>
+<pre zoom labels = "database.introduction, database.definitions">
+<div tagcount></div>
+<span xsmall>Data Base Definition</span>
+Organized collection of structured related information, or data, typically stored in a computer.
+The data is managed by a DBMS(DataBase Management System).
+
+Example of DB:
++---------+
+|Data type|
++---+-----+  +------------+
+    |      +-+----------+ |
+    +----> |Folder Names+-+
+           +-----+------+    +---------------+
+                 |         +--------------+  |
+                 |       +-+------------+-|- +
+                 +------>| Data & Signal+-+
+                         |    Names     |
+                         +--------------+
+</pre>
+
+<pre zoom labels = "database.introduction, database.definitions, database.DMBS">
+<div tagcount></div>
+<span xsmall>DBMS</span>
+Software to ease:
+-->Define the Data Base.
+-->Construction of Data Base.
+-->Handling of Data Base.
+</pre>
+
+<pre zoom labels = "database.introduction, database.definitions, database.DMBS">
+<div tagcount></div>
+<span xsmall>DBMS Functions</span>
+1.Allow users to create Data Bases and specify the schemes using DDL(Data Definition Language).
+2.Allow users to view and modify data using DML(Data Manipulation Language).
+3.Allow the storage large volumes of data and an efficient access.
+4.Allow the crash recovery of the DB.
+5.Transaction management for concurrent access.
+</pre>
+
+
+</body>
+</html>
